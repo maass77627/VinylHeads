@@ -1,0 +1,7 @@
+<h1><%= @record.name %></h1>
+ 
+<ul>
+  <% @record.posts.each do |p| %>
+    <li><%= link_to p.name, post_path(p) %></li>
+  <% end %>
+</ul>
